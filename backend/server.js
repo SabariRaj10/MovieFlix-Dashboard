@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 5000;
 app.use(helmet());
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
-    ? ['https://your-frontend-domain.vercel.app', 'https://your-frontend-domain.netlify.app']
+    ? ['https://movie-flix-dashboard-nd59.vercel.app', 'https://your-frontend-domain.netlify.app']
     : ['http://localhost:3000', 'http://localhost:5173'],
   credentials: true
 }));
@@ -39,7 +39,6 @@ mongoose.connect(process.env.MONGODB_URI, {
 // Routes
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/movies', require('./routes/movies'));
-app.use('/api/stats', require('./routes/stats'));
 
 // Health check endpoint
 app.get('/health', (req, res) => {
@@ -59,7 +58,6 @@ app.get('/', (req, res) => {
     endpoints: {
       auth: '/api/auth',
       movies: '/api/movies',
-      stats: '/api/stats',
       health: '/health'
     }
   });
