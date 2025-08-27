@@ -2,19 +2,19 @@
 
 A full-stack web application for discovering, searching, and exploring movies with comprehensive statistics and data visualization.
 
-## ✨ Features
+## Features
 
-- **🎭 Movie Discovery**: Browse and search through an extensive movie database
-- **🔍 Advanced Search**: Search by title, genre, year, and rating with real-time filtering
-- **📊 Interactive Statistics**: Visualize movie data with charts and analytics
-- **🌙 Dark/Light Mode**: Toggle between themes for better user experience
-- **📱 Responsive Design**: Optimized for desktop, tablet, and mobile devices
-- **🔐 Authentication**: Secure login system with JWT tokens
-- **💾 Data Caching**: Local database caching with OMDb API integration
-- **📥 CSV Export**: Download movie data for offline analysis
-- **🎨 Modern UI**: Beautiful interface built with Tailwind CSS
+- **Movie Discovery**: Browse and search through an extensive movie database
+- **Advanced Search**: Search by title, genre, year, and rating with real-time filtering
+- **Interactive Statistics**: Visualize movie data with charts and analytics
+- **Dark/Light Mode**: Toggle between themes for better user experience
+- **Responsive Design**: Optimized for desktop, tablet, and mobile devices
+- **Authentication**: Secure login system with JWT tokens
+- **Data Caching**: Local database caching with OMDb API integration
+- **CSV Export**: Download movie data for offline analysis
+- **Modern UI**: Beautiful interface built with Tailwind CSS
 
-## 🏗️ Tech Stack
+## Tech Stack
 
 ### Frontend
 - **React.js** - Modern UI framework
@@ -135,57 +135,7 @@ MovieFlix-Dashboard/
 └── .gitignore           # Git ignore file
 ```
 
-## 🌐 Deployment
 
-### Option 1: Vercel (Recommended for Frontend)
-
-1. **Deploy Frontend to Vercel**
-   ```bash
-   # Install Vercel CLI
-   npm i -g vercel
-   
-   # Deploy from frontend directory
-   cd frontend
-   vercel
-   ```
-
-2. **Configure Environment Variables**
-   - Go to Vercel dashboard
-   - Add your environment variables
-   - Update API URLs to point to your deployed backend
-
-### Option 2: Netlify
-
-1. **Build the project**
-   ```bash
-   cd frontend
-   npm run build
-   ```
-
-2. **Deploy to Netlify**
-   - Drag and drop the `dist` folder to Netlify
-   - Or connect your GitHub repository for automatic deployments
-
-### Option 3: Heroku (Backend)
-
-1. **Deploy Backend to Heroku**
-   ```bash
-   # Install Heroku CLI
-   # Create Heroku app
-   heroku create your-app-name
-   
-   # Add MongoDB addon
-   heroku addons:create mongolab
-   
-   # Deploy
-   git push heroku main
-   ```
-
-2. **Set Environment Variables**
-   ```bash
-   heroku config:set JWT_SECRET=your-secret
-   heroku config:set OMDB_API_KEY=your-key
-   ```
 
 ## 🔧 Available Scripts
 
@@ -241,51 +191,10 @@ npm run lint        # Run ESLint
 - Sort by various criteria
 - Pagination for large result sets
 
-## 🐛 Troubleshooting
 
-### Common Issues
-
-1. **MongoDB Connection Error**
-   - Ensure MongoDB is running
-   - Check connection string in `.env`
-   - Verify network access for Atlas
-
-2. **API Key Issues**
-   - Verify API keys are correct
-   - Check API rate limits
-   - Ensure keys are properly set in environment
-
-3. **Build Errors**
-   - Clear `node_modules` and reinstall
-   - Check Node.js version compatibility
-   - Verify all dependencies are installed
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
 
-- [OMDb API](http://www.omdbapi.com/) for movie data
-- [TMDB](https://www.themoviedb.org/) for additional movie information
-- [Tailwind CSS](https://tailwindcss.com/) for the beautiful UI framework
-- [React](https://reactjs.org/) for the amazing frontend framework
-
-## 📞 Support
-
-If you encounter any issues or have questions:
-- Create an issue in the GitHub repository
-- Check the troubleshooting section above
-- Review the API documentation
-
----
-
-**Made with ❤️ by [Your Name]**
